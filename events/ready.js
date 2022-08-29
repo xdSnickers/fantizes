@@ -10,7 +10,7 @@ client.on("ready", async () => {
         let totalMembers = numberWithCommas(client.guilds.cache.reduce((a,b) => a + b.memberCount, 0));
 
         client.user?.setPresence({
-            status: "dnd", // You can also use online, invisible and dnd.
+            status: "online", // You can also use online, invisible and dnd.
             activities: [
                 {
                     name: `/help | Fantasy♫`,
