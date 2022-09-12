@@ -14,8 +14,8 @@ module.exports = {
       .setDescription("<a:blue_flame:1005286941392121856>__**Hey Its Me Fantasy Thanks For Using Me If You Find Any Bug Report To My Support Server!**__  .")
       .addField('<a:p_chikahands:1003200910429786122>**My Prefix /:**', `<a:Dance:1003197645856190464>__**I have 15+ commands which you can find in the menu below**__`)
       .addField('<a:p_chikahands:1003200910429786122>**Navigation Help:**', '<a:Dance:1003197645856190464> __**Click on the menu to select a category**__ ')
-      .addField('<a:p_chikahands:1003200910429786122>**Bot by:**', "[<a:Dance:1003197645856190464> __**!xd.Snickers.#5464**__](http://xdsnickers.cf/)")
-      .addField('<a:p_chikahands:1003200910429786122>**Music:**', "<a:Dance:1003197645856190464> __**If you find any bugs/errors make sure to visit:**__ __**http://xdsnickers.cf**__")
+      .addField('<a:p_chikahands:1003200910429786122>**Bot by:**', "[<a:Dance:1003197645856190464> __**!xd.Snickers.#4233**__](https://xdsnicker.cf/)")
+      .addField('<a:p_chikahands:1003200910429786122>**Music:**', "<a:Dance:1003197645856190464> __**If you find any bugs/errors make sure to visit:**__ __**https://xdsnicker.cf**__")
       .setImage("https://cdn.discordapp.com/attachments/856437531451850775/1006011255665991762/standard_1.gif")
       .setFooter({
         text: `Coded by ♫'s !xd.Snickers.|Requested by ${interaction.user.username}`}
