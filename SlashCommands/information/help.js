@@ -1,76 +1,64 @@
-const { MessageEmbed, MessageActionRow, MessageSelectMenu } = require("discord.js");
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
   name: "help",
-  description: "Show Bot's Help Menu",
+  description: "Show Bot's Assist Menu",
 
   run: async (client, interaction, args) => {
 
       const BotInfo = new MessageEmbed()
-      .setColor('#8112df')
+      .setColor('#020127')
       .setThumbnail(client.user.displayAvatarURL())
-      .setTitle(`${client.user.username}'s Help menu`)
-      
-      .setDescription("<a:blue_flame:1005286941392121856>__**Hey Its Me Fantasy Thanks For Using Me If You Find Any Bug Report To My Support Server!**__  .")
-      .addField('<a:p_chikahands:1003200910429786122>**My Prefix /:**', `<a:Dance:1003197645856190464>__**I have 15+ commands which you can find in the menu below**__`)
-      .addField('<a:p_chikahands:1003200910429786122>**Navigation Help:**', '<a:Dance:1003197645856190464> __**Click on the menu to select a category**__ ')
-      .addField('<a:p_chikahands:1003200910429786122>**Bot by:**', "[<a:Dance:1003197645856190464> __**!xd.Snickers.#4233**__](https://xdsnicker.cf/)")
-      .addField('<a:p_chikahands:1003200910429786122>**Music:**', "<a:Dance:1003197645856190464> __**If you find any bugs/errors make sure to visit:**__ __**https://xdsnicker.cf**__")
-      .setImage("https://cdn.discordapp.com/attachments/856437531451850775/1006011255665991762/standard_1.gif")
+      .setTitle(`<a:fronix_badge:1010175835602419722> **__${client.user.username}'s Assist Menu__** <a:fronix_badge:1010175835602419722>`)
+      .addField('<:t_Arrow:1002432066379591791> **__Navigation Assist:__**', '<:t_Arrow:1002432066379591791> _Click on buttons to see commands._')
+      .addField('<:t_Arrow:1002432066379591791> __Categories:__', '<:t_Arrow:1002432066379591791> _Information. , Music._')
+      .setImage("")
       .setFooter({
-        text: `Coded by ♫'s !xd.Snickers.|Requested by ${interaction.user.username}`}
+        text: `Requested by ${interaction.user.username}`}
         )
       .setTimestamp();
 
 
       const Information = new MessageEmbed()
-    .setColor('#26f8ff')
-    .setTitle('<a:Discord:1005988068102258759>  __Information__')
-    .addField(" <a:DittoHype:1005987994592882788> **/Help**", "<a:Vivre_loading:1005989479527485570>__Shows help menu__")
-    .addField(" <a:DittoHype:1005987994592882788> **/Botinfo**", "<a:Vivre_loading:1005989479527485570>__See Information about bot.__")
-    .addField(" <a:DittoHype:1005987994592882788> **/Ping**", "<a:Vivre_loading:1005989479527485570>__Shows ping__")
-    .addField(" <a:DittoHype:1005987994592882788> **/Invite**", "<a:Vivre_loading:1005989479527485570>__Gives invite link__")
-    .addField(" <a:DittoHype:1005987994592882788> **/Support**", "<a:Vivre_loading:1005989479527485570>__Gives support server link__")
-    .setFooter({
-        text: "Bot made with ♫'s by !xd.Snickers.#5464 "
-      });
+      .setColor('#020127')
+      .setTitle('<a:nixalert:1015566705260507247> **__INFORMATION__** <a:nixalert:1015566705260507247>')
+      .addField(' **/help**', ' _Use: Shows help menu._')
+      .addField(' **/botinfo**', ' _Use: Shows Bot information._')
+      .addField(' **/ping**', ' _Use: Shows ping._')
+      .addField(' **/invite**', ' _Use: Gives Bot Invite Link._')
+      .addField(' **/support**', ' _Use: Gives Support Server Invite Link._');
 
       const music = new MessageEmbed()
-      .setColor("#8112df")
-      .setTitle('📀 Music')
-      .addField('`/play`', '```js\nFunction: Play a Song.\nAliases: p.\n```')
-      .addField('`/skip`', '```js\nFunction: Skips the Song.\nAliases: null.\n```')
-      .addField('`/stop`', '```js\nFunction: Stops the Song.\nAliases: null.\n```')
-      .addField('`/pause`', '```js\nFunction: Pause the Song.\nAliases: null.\n```')
-      .addField('`/resume`', '```js\nFunction: Resume the Song.\nAliases: null.\n```')
-      .addField('`/join`', '```js\nFunction: Joins the voice channel.\nAliases: null.\n```')
-      .addField('`/leave`', '```js\nFunction: Leaves the voice channel.\nAliases: dc, disconnect.\n```')
-      .addField('`/volume`', '```js\nFunction: Sets volume of song.\nAliases: null.\n```')
-      .addField('`/queue`', '```js\nFunction: Shows the queue that is currently being played.\nAliases: q.\n```')
-      .addField('`/loop`', '```js\nFunction: Loops the queue or a song that is currently being played.\nAliases: l.\n```');
+      .setColor("#020127")
+      .setTitle('<a:fronixdisc:1015565117271851089> __MUSIC__ <a:fronixdisc:1015565117271851089>')
+      .addField('**/play**', ' _Use: Plays a Song._')
+      .addField(' **/skip**', ' _Use: Skips the Song._')
+      .addField(' **/stop**', ' _Use: Stops the Song._')
+      .addField(' **/pause**', ' _Use: Pause the Song._')
+      .addField(' **/resume**', ' _Use: Resume the Song._')
+      .addField(' **/join**', ' _Use: Joins the voice channel._')
+      .addField(' **/leave**', ' _Use: Leaves the voice channel._')
+      .addField(' **/volume**', ' _Use: Sets volume of song._')
+      .addField(' **/queue**', ' _Use: Shows the queue that is currently being played._')
+      .addField(' **/loop**', ' _Use: Loops the queue or a song that is currently being played._\n _*More:* Type /loop twice to loop queue._ ');
 
     const components = (state) => [
       new MessageActionRow().addComponents(
-        new MessageSelectMenu()
-          .setCustomId("help-menu")
-          .setPlaceholder(`${client.user.username}'s Help Panel`)
-          .setDisabled(state)
-          .addOptions([
-            {
-              label: "Information",
-              emoji: "<:config:1005993880979783691>",
-              description: 'See Informative Commands',
-              value: "option1",
-            },
-            {
-              label: "Music",
-              emoji: "<:music:1005993819642265621>",
-              description: 'See Music Commands',
-              value: "option2",
-            },        
-          ])
+        new MessageButton()
+        .setCustomId("option1")
+        .setEmoji("<a:nixalert:1015566705260507247>")
+        .setLabel("Information")
+        .setStyle("SECONDARY"),
+  
+        new MessageButton()
+        .setCustomId("option2")
+        .setEmoji("<a:fronixdisc:1015565117271851089>")
+        .setLabel("Music")
+        .setStyle("SECONDARY")
       ),
     ];
+
+    const filter = i => ['option1', 'option2'].includes(i.customId) && i.user.id === interaction.user.id;
 
     const initialMessage = await interaction.followUp({
       embeds: [BotInfo],
@@ -79,19 +67,21 @@ module.exports = {
 
   });
 
-      const collector = interaction.channel.createMessageComponentCollector({
-        componentType: "SELECT_MENU",
+      const collector = initialMessage.createMessageComponentCollector({
+        filter,
+        componentType: "BUTTON",
       });
   
-      collector.on("collect", (message) => {
-        if(message.values[0] == "option1") {
-          initialMessage.edit({ embeds: [Information] });
-      }
-      if(message.values[0] == "option2") {
-        initialMessage.edit({ embeds: [music] });
-    }
-
-      });
+      collector.on("collect", async (i) => {
+        if (i.customId === 'option1') {
+          await initialMessage.edit({ embeds: [Information] });
+          await i.deferUpdate()
+        }
+        if (i.customId === 'option2') {
+         await initialMessage.edit({ embeds: [music] });
+         await i.deferUpdate()
+        }
+  });
 
 },
 };
