@@ -2,7 +2,7 @@ const client = require("../index");
 
 client.on("ready", async () => {
     console.log(`${client.user.tag} is now online ok?`);
-    console.log("A music bot made with ♫' by !xd.Snickers.#4233");
+    console.log("A music bot made with ♫' by !xd.Snickers.#4322");
     function numberWithCommas(x) {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     } 
