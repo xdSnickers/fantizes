@@ -22,7 +22,7 @@ module.exports = {
         .setColor('#8112df')
         .setTitle(`${client.user.username}'s Information`)
         .setThumbnail(client.user.displayAvatarURL())
-        .addField("<a:Zainab3:1003193089306923068>・**Creator**:", "[__**!xd.Snickers.#5464**__](https://xdsnicker.cf/)")
+        .addField("<a:Zainab3:1003193089306923068>・**Creator**:", "[__**!xd.Snickers.#4233**__](https://xdsnicker.cf/)")
         .addField(`<a:Zainab3:1003193089306923068>・${client.user.username}'s Tag:`, client.user.tag)
         .addField(`<a:Zainab3:1003193089306923068>・${client.user.username}'s ID:`, client.user.id)
         .addField("<a:Zainab3:1003193089306923068>・Node.js:", process.version)
@@ -34,10 +34,10 @@ module.exports = {
         .addField("<a:Zainab3:1003193089306923068>・Created at:", `${moment(client.user.createdTimestamp).format('LT')} ${moment(client.user.createdTimestamp).format('LL')} - (${moment(client.user.createdTimestamp).fromNow()})`)
         .addField("<a:Zainab3:1003193089306923068>・Website:", "[__**https://xdsnicker.cf**__](https://xdsnicker.cf/)")
         
-        .addField("<a:Zainab3:1003193089306923068>・Support Server", "[__**Elite Community™**__](https://discord.gg/quZYTbnPpH)\n[]()")
+        .addField("<a:Zainab3:1003193089306923068>・Support Server", "[__**☆・Black-Pearl™**__](https://discord.gg/nqdEqypmbC)\n[]()")
         .setImage("https://cdn.discordapp.com/attachments/856437531451850775/1006011077601001572/standard.gif")
         .setFooter({
-            text: `Coded by !xd.Snickers ♫'s.|Requested by ${interaction.user.username}`}
+            text: `|Requested by ${interaction.user.username}`}
             )
         .setTimestamp();
 
