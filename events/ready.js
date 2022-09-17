@@ -13,7 +13,7 @@ client.on("ready", async () => {
             status: "online", // You can also use online, invisible and dnd.
             activities: [
                 {
-                    name: `/help | Fantasy♫`,
+                    name: `/lund | Fantasy♫`,
                     type: "WATCHING" // You can also use PLAYING, STREAMING, WATCHING and COMPETING.
                 }
             ]
