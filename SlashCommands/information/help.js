@@ -1,4 +1,4 @@
-`const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
   name: "help",
@@ -21,7 +21,7 @@ module.exports = {
 
       const Information = new MessageEmbed()
       .setColor('#020127')
-      .setTitle('<a:Vivre_loading:1005989479527485570>  **__INFORMATION__** <a:Vivre_loading:1005989479527485570> ')
+      .setTitle('<a:Vivre_loading:1005989479527485570> **__INFORMATION__** <a:Vivre_loading:1005989479527485570>')
       .addField(' **/help**', ' _Use: Shows help menu._')
       .addField(' **/botinfo**', ' _Use: Shows Bot information._')
       .addField(' **/ping**', ' _Use: Shows ping._')
@@ -30,7 +30,7 @@ module.exports = {
 
       const music = new MessageEmbed()
       .setColor("#020127")
-      .setTitle('<a:Vivre_loading:1005989479527485570>  __MUSIC__ <a:Vivre_loading:1005989479527485570> ')
+      .setTitle('<a:Vivre_loading:1005989479527485570> __MUSIC__ <a:Vivre_loading:1005989479527485570>')
       .addField('**/play**', ' _Use: Plays a Song._')
       .addField(' **/skip**', ' _Use: Skips the Song._')
       .addField(' **/stop**', ' _Use: Stops the Song._')
