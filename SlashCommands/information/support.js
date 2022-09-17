@@ -9,7 +9,7 @@ module.exports = {
 			.addComponents(
 				new MessageButton()
 					.setLabel('Join my server')
-          .setURL("https://discord.gg/numeWGgwpw")
+          .setURL("https://discord.gg/nqdEqypmbC")
 					.setStyle("LINK"),
 			);
 

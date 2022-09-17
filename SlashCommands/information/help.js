@@ -21,7 +21,7 @@ module.exports = {
 
       const Information = new MessageEmbed()
       .setColor('#020127')
-      .setTitle('<:flex_Stare:1017596417340080178> **__INFORMATION__** <:flex_Stare:1017596417340080178>')
+      .setTitle('<a:Vivre_loading:1005989479527485570> **__INFORMATION__** <a:Vivre_loading:1005989479527485570>')
       .addField(' **/help**', ' _Use: Shows help menu._')
       .addField(' **/botinfo**', ' _Use: Shows Bot information._')
       .addField(' **/ping**', ' _Use: Shows ping._')
@@ -30,7 +30,7 @@ module.exports = {
 
       const music = new MessageEmbed()
       .setColor("#020127")
-      .setTitle('<:flex_Stare:1017596417340080178> __MUSIC__ <:flex_Stare:1017596417340080178>')
+      .setTitle('<a:Vivre_loading:1005989479527485570> __MUSIC__ <a:Vivre_loading:1005989479527485570>')
       .addField('**/play**', ' _Use: Plays a Song._')
       .addField(' **/skip**', ' _Use: Skips the Song._')
       .addField(' **/stop**', ' _Use: Stops the Song._')
@@ -46,13 +46,13 @@ module.exports = {
       new MessageActionRow().addComponents(
         new MessageButton()
         .setCustomId("option1")
-        .setEmoji("<:flex_Stare:1017596417340080178>")
+        .setEmoji("<a:nixalert:1015566705260507247>")
         .setLabel("Information")
         .setStyle("SECONDARY"),
   
         new MessageButton()
         .setCustomId("option2")
-        .setEmoji("<:flex_Stare:1017596417340080178>")
+        .setEmoji("<a:fronixdisc:1015565117271851089>")
         .setLabel("Music")
         .setStyle("SECONDARY")
       ),

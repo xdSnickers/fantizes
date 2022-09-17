@@ -22,7 +22,7 @@ module.exports = {
         .setColor('#8112df')
         .setTitle(`${client.user.username}'s Information`)
         .setThumbnail(client.user.displayAvatarURL())
-        .addField("<a:Zainab3:1003193089306923068>・**Creator**:", "[__**!xd.Snickers.#5464**__](https://xdsnicker.cf/)")
+        .addField("<a:Zainab3:1003193089306923068>・**Creator**:", "[__**!xd.Snickers.#4233**__](https://xdsnicker.cf/)")
         .addField(`<a:Zainab3:1003193089306923068>・${client.user.username}'s Tag:`, client.user.tag)
         .addField(`<a:Zainab3:1003193089306923068>・${client.user.username}'s ID:`, client.user.id)
         .addField("<a:Zainab3:1003193089306923068>・Node.js:", process.version)
