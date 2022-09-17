@@ -1,14 +1,14 @@
 {
     "name": "Discord-Music-Bot",
     "version": "2.0.0",
-    "description": "Discord-Music-Bot V2 with ♥ By !xd.Snickers$4233",
+    "description": "Discord-Music-Bot V2 with ♥ By Ahad#3257",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
         "test": "nodemon index.js"
     },
     "keywords": [],
-    "author": "!xd.Snickers$4233",
+    "author": "Ahad#3257",
     "license": "ISC",
     "dependencies": {
         "@discordjs/voice": "^0.8.0",

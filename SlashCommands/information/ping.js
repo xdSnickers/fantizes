@@ -3,7 +3,7 @@ module.exports = {
     description: "Shows Fantasy's Ping",
 
     run: async (client, interaction, args) => {
-        interaction.followUp({ content: `${client.ws.ping}!xd` }).catch((e) => {
+        interaction.followUp({ content: `${client.ws.ping}ms!` }).catch((e) => {
           
         });
     },

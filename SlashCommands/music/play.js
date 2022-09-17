@@ -34,7 +34,7 @@ module.exports = {
     try {
       client.distube.play(VoiceChannel, music, { textChannel: interaction.channel, member: interaction.member});
       let embed_3 = new MessageEmbed()
-      .setDescription(`<:music:1005993819642265621>  | Song Foked.`)
+      .setDescription(` <a:Vivre_loading:1005989479527485570> | Song Foked.`)
       .setColor('RANDOM');
       interaction.followUp({embeds: [embed_3]}).catch((e) => {
 
