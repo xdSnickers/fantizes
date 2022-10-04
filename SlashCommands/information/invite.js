@@ -8,7 +8,7 @@ module.exports = {
 			.addComponents(
 				new MessageButton()
 					.setLabel('Invite me')
-          .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=2159036672&scope=bot%20applications.commands`)
+          .setURL(`https://discord.com/api/oauth2/authorize?client_id=889765638564888576&permissions=8&scope=bot`)
 					.setStyle("LINK"),
 			);
 
